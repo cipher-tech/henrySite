@@ -47,11 +47,11 @@ Route::get('/register', function () {
 
 
 Route::group(['prefix' => 'dashboard'], function () {
-    Route::get('/index', function () {
+    Route::get('/', function () {
         return view('dashboard.dashboard');
     })->name("dashboard");
-    
-    Route::get('/dashboard/fund', function () {
+
+    Route::get('/fund', function () {
         return view('dashboard.fund');
     })->name("dashboard");
 
@@ -65,5 +65,27 @@ Route::group(['prefix' => 'dashboard'], function () {
 
     Route::get('/withdraw', function () {
         return view('dashboard.withdraw');
+    })->name("dashboard");
+});
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('/', function () {
+        return view('admin.index');
+    })->name("index");
+
+    Route::get('/fund', function () {
+        return view('admin.fund');
+    })->name("dashboard");
+
+    Route::get('/profile', function () {
+        return view('admin.profile');
+    })->name("dashboard");
+
+    Route::get('/trade-history', function () {
+        return view('admin.trade-history');
+    })->name("dashboard");
+
+    Route::get('/withdraw', function () {
+        return view('admin.withdraw');
     })->name("dashboard");
 });
