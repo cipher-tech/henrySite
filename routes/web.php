@@ -44,3 +44,26 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register');
 })->name("register");
+
+
+Route::group(['prefix' => 'dashboard'], function () {
+    Route::get('/index', function () {
+        return view('dashboard.dashboard');
+    })->name("dashboard");
+    
+    Route::get('/dashboard/fund', function () {
+        return view('dashboard.fund');
+    })->name("dashboard");
+
+    Route::get('/profile', function () {
+        return view('dashboard.profile');
+    })->name("dashboard");
+
+    Route::get('/trade-history', function () {
+        return view('dashboard.trade-history');
+    })->name("dashboard");
+
+    Route::get('/withdraw', function () {
+        return view('dashboard.withdraw');
+    })->name("dashboard");
+});
