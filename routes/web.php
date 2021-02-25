@@ -41,10 +41,18 @@ Route::get('/login', function () {
     return view('login');
 })->name("login");
 
+Route::get('/forgot-password', function () {
+    return view('auth.forgot-password');
+})->name("forgot-password");
+
 Route::get('/register', function () {
     return view('register');
 })->name("register");
 
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard'); 
 
 Route::group(['prefix' => 'dashboard'], function () {
     Route::get('/', function () {
@@ -72,7 +80,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('/', function () {
         return view('admin.index');
     })->name("index");
-
+ 
     Route::get('/fund', function () {
         return view('admin.fund');
     })->name("dashboard");
@@ -89,3 +97,5 @@ Route::group(['prefix' => 'admin'], function () {
         return view('admin.withdraw');
     })->name("dashboard");
 });
+
+
