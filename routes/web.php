@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -54,48 +55,46 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard'); 
 
-Route::group(['prefix' => 'dashboard'], function () {
-    Route::get('/', function () {
-        return view('dashboard.dashboard');
-    })->name("dashboard");
+Route::group(['prefix' => 'dashboard', "middleware" => "auth:sanctum"], function () {
+    Route::get('/', [UserController::class, "index"])->name("dashboard");
 
     Route::get('/fund', function () {
         return view('dashboard.fund');
-    })->name("dashboard");
+    })->name("fund");
 
     Route::get('/profile', function () {
         return view('dashboard.profile');
-    })->name("dashboard");
+    })->name("profile");
 
     Route::get('/trade-history', function () {
         return view('dashboard.trade-history');
-    })->name("dashboard");
+    })->name("trade-history");
 
     Route::get('/withdraw', function () {
         return view('dashboard.withdraw');
-    })->name("dashboard");
+    })->name("withdraw");
 });
 
 Route::group(['prefix' => 'admin'], function () {
     Route::get('/', function () {
         return view('admin.index');
-    })->name("index");
+    })->name("adminDashboard");
  
     Route::get('/fund', function () {
         return view('admin.fund');
-    })->name("dashboard");
+    })->name("adminFund");
 
     Route::get('/profile', function () {
         return view('admin.profile');
-    })->name("dashboard");
+    })->name("adminProfile");
 
     Route::get('/trade-history', function () {
         return view('admin.trade-history');
-    })->name("dashboard");
+    })->name("adminHistory");
 
     Route::get('/withdraw', function () {
         return view('admin.withdraw');
-    })->name("dashboard");
+    })->name("adminWithdrawal");
 });
 
 
