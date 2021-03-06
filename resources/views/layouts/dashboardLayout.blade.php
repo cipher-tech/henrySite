@@ -25,7 +25,7 @@
     <div class="sidemenu-area">
         <div class="sidemenu-header">
             <a href="{{route('dashboard')}}" class="navbar-brand d-flex align-items-center">
-                <img src="https://mutualstockinvest.com//assets/images/logo/Mutualstockinvest.png" alt="logo">
+                <img src="/assets/images/logo/Ameristock.png" alt="logo">
             </a>
 
             <div class="burger-menu d-none d-lg-block">

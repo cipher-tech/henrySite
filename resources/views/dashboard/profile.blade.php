@@ -33,8 +33,9 @@
                 <ul class="nav nav-pills nav-fill" role="tablist">
                     <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#posts" role="tab">Profile</a>
                     </li>
-                    <li class="nav-item hidden-xs-down"><a class="nav-link" data-toggle="tab" href="#photos"
-                            role="tab">Edit</a></li>
+                    <li class="nav-item hidden-xs-down">
+                        <a class="nav-link" {{-- data-toggle="tab" --}} href="{{route("userProfile")}}" {{-- href="#photos" --}}
+                            {{-- role="tab" --}}>Edit</a></li>
                 </ul>
             </div>
 
