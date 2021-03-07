@@ -52,27 +52,39 @@
         </div>
 
         <div class="card-body">
-            <form action="" method="POST">
+            @if ($message)
+                <p>{{ $message }}</p>
+            @endif
+
+            @foreach ($errors->all() as $error)
+                <p class="text-danger">{{ __($error) }}</p>
+            @endforeach
+            <form method="POST">
+                @csrf
                 <div class="form-group">
                     <label>Withdrawal Amount ( USD )</label>
-                    <input placeholder="Enter deposit amount" name="amount" type="number" class="form-control"
+                    <input required placeholder="Enter deposit amount" name="amount" type="number" class="form-control"
                         name="btc_fund">
                 </div>
                 <div class="form-group">
                     <label>Username</label>
-                    <input type="text" class="form-control" value="cipher" name="username" readonly>
+                    <input type="text" class="form-control" value="{{_($user->username)}}" name="username" readonly>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" class="form-control" value="{{_($user->email)}}" name="email" readonly>
                 </div>
                 <div class="form-group">
                     <label>Withdrawal Type</label>
 
-                    <select class="form-control" name="with_type">
+                    <select required class="form-control" name="type">
                         <option value="Bank Transfer">Bank Transfer</option>
-                        <option value="Bitcoins">Bitcoins</option>
+                        <option selected value="bitcoin">Bitcoin</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label>Description</label>
-                    <textarea name="desc" class="form-control"
+                    <textarea required name="coin_address" class="form-control"
                         placeholder="Please provide your bitcoin address here if you want to receive payment through bitcoin"
                         rows="3"></textarea>
                 </div>
@@ -90,8 +102,41 @@
     </div>
 
     <div class="card mb-30">
-        <div class="alert alert-info" role="alert">
+        {{-- <div class="alert alert-info" role="alert">
             <p>No Data Available Yet!.</p>
+        </div> --}}
+        <div class="card-body">
+            <h1>Withdrawals</h1>
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        {{-- <th scope="col">#id</th> --}}
+                        <th scope="col">Transaction_id</th>
+                        {{-- <th scope="col">username</th> --}}
+                        <th scope="col">Email</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Coin Address</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Date</th>
+                        {{-- <th scope="col" style="text-align: center" colspan="2">Actions</th> --}}
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($withdrawals as $withdrawal)
+                    <tr>
+                        {{-- <th scope="row">{{$withdrawal["id"]}}</th> --}}
+                        <td>{{$withdrawal["transaction_id"]}}</td>
+                        {{-- <td>{{$withdrawal["username"]}}</td> --}}
+                        <td>{{$withdrawal["email"]}}</td> 
+                        <td>{{$withdrawal["amount"]}}</td>  
+                        <td>{{$withdrawal["coin_address"]}}</td> 
+                        <td>{{$withdrawal["status"]}}</td> 
+                        <td>{{$withdrawal["created_at"]}}</td> 
+                        {{-- <th><a href="{{ route('viewUser', ['id' => $withdrawal['id']]) }}" class="btn btn-primary">Edit</a></th> --}}
+                    </tr>
+                    @endforeach
+                </tbody>
+            </table>
         </div>
     </div>
     <!-- Footer -->

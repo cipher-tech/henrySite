@@ -6,11 +6,16 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use \Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class Deposit extends Model
+class Withdrawal extends Model
 {
     use HasFactory;
-    protected $guarded = ["id"];
+    protected $guarded = ['id'];
 
+    /**
+     * Get the user that owns the Withdrawal
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */ 
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=1024">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>AmeriSTock | Home</title>
+    <title>Stockmutualinvest | Home</title>
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
@@ -47,7 +47,7 @@
                                     <a href="#0"><i class="flaticon-support"></i>Support</a>
                                 </li>
                                 <li>
-                                    <a href="Mailto:support@ameristock.net"><i class="flaticon-email"></i>support@ameristock.net </a>
+                                    <a href="Mailto:support@Stockmutualinvest.net"><i class="flaticon-email"></i>support@Stockmutualinvest.net </a>
                                 </li>
                             </ul>
                         </div>
@@ -59,7 +59,7 @@
                     <div class="header-area">
                         <div class="logo">
                             <a href="index-2.html">
-                                <img src="assets/images/logo/Ameristock.png" alt="logo">
+                                <img src="assets/images/logo/Stockmutualinvest.png" alt="logo">
                             </a>
                         </div>
                         <ul class="menu">
@@ -101,7 +101,7 @@
 
 
         <!--=======Banner-Section Starts Here=======-->
-        <section class="hero-section bg_img" data-background="https://ameristock.net/assets/images/about/hero-bg.png">
+        <section class="hero-section bg_img" data-background="https://Stockmutualinvest.net/assets/images/about/hero-bg.png">
             <div class="container">
                 <div class="hero-content">
                     <h1 class="title">About US</h1>
@@ -129,9 +129,9 @@
                     <div class="col-lg-6">
                         <div class="section-header left-style">
                             <span class="cate">WELCOME TO STOCK TO STOCK</span>
-                            <h2 class="title">about AmeriStock</h2>
+                            <h2 class="title">about Stockmutualinvest</h2>
                             <p>
-                                AmeriStock is a Bitcoin-based platform, offering a leveraged trading on several digital assets including Bitcoin, Ethereum, Litecoin, and Ripple. The company was founded in 2018 and from the very first day, we have grown exponentially and currently serve clients in more than 150 countries. We are affliated with a lot of high profile companies like Ameriprise financial, EUREX exchange to mention a few. We provide our clients with access to top-tier liquidity and wide range of trading tools, while maintaining security, liquidity, enabling a safe and efficient trading environment for everyone.
+                                Stockmutualinvest is a Bitcoin-based platform, offering a leveraged trading on several digital assets including Bitcoin, Ethereum, Litecoin, and Ripple. The company was founded in 2018 and from the very first day, we have grown exponentially and currently serve clients in more than 150 countries. We are affliated with a lot of high profile companies like Ameriprise financial, EUREX exchange to mention a few. We provide our clients with access to top-tier liquidity and wide range of trading tools, while maintaining security, liquidity, enabling a safe and efficient trading environment for everyone.
                             </p>
                         </div>
                         <div class="about--content">
@@ -177,7 +177,7 @@
 
 
         <!--=======CEO-Section Starts Here=======-->
-        <section class="ceo-section padding-bottom padding-top bg_img" data-background="https://ameristock.net/assets/images/about/ceo-bg.jpg">
+        <section class="ceo-section padding-bottom padding-top bg_img" data-background="https://Stockmutualinvest.net/assets/images/about/ceo-bg.jpg">
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-lg-7 col-xl-6">
@@ -185,7 +185,7 @@
                             <h3 class="title">Our goal is to be at the heart of the financial services industry</h3>
                             <div class="author">
                                 <h6 class="subtitle"><a href="#0">Adam Phelps</a></h6>
-                                <span class="info">CEO of AmeriStock</span>
+                                <span class="info">CEO of Stockmutualinvest</span>
                                 <div class="sign">
                                     <img src="assets/images/about/sign-ceo.png" alt="about">
                                 </div>
@@ -395,7 +395,7 @@
                 <div class="container">
                     <div class="newslater-area">
                         <div class="newslater-content padding-bottom padding-top">
-                            <span class="cate">SUBSCRIBE TO AmeriStock</span>
+                            <span class="cate">SUBSCRIBE TO Stockmutualinvest</span>
                             <h3 class="title">To Get Exclusive Benefits</h3>
                             <form class="newslater-form">
                                 <input type="text" placeholder="Enter Your Email Here" required="">
@@ -430,7 +430,7 @@
                 <div class="footer-top">
                     <div class="logo">
                         <a href="index-2.html">
-                            <img src="assets/images/logo/Ameristock White - Copy.png" alt="logo">
+                            <img src="assets/images/logo/Stockmutualinvest White - Copy.png" alt="logo">
                         </a>
                     </div>
                     <ul class="links">
@@ -451,7 +451,7 @@
                 <div class="footer-bottom">
                     <div class="footer-bottom-area">
                         <div class="left">
-                            <p>&copy; 2020 <a href="#0">About AmeriStock</a> | All right reserved</p>
+                            <p>&copy; 2020 <a href="#0">About Stockmutualinvest</a> | All right reserved</p>
                         </div>
                         <ul class="social-icons">
                             <li>

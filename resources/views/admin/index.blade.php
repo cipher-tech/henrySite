@@ -76,56 +76,35 @@
     </div>
     <!-- End Stats Area -->
 
+    <h1>All Users</h1>
     <table class="table table-borderless">
         <thead>
             <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">#id</th>
+                <th scope="col">full_name</th>
+                <th scope="col">username</th>
+                <th scope="col">email</th>
+                <th scope="col">phone_no</th>
+                <th scope="col">invested</th>
+                <th scope="col">wallet_balance</th>
+                <th scope="col">country</th>
                 {{-- <th scope="col" style="text-align: center" colspan="2">Actions</th> --}}
             </tr>
         </thead>
         <tbody>
+            @foreach ($users as $user)
             <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <th><button type="submit" name="btc_submit" class="btn btn-primary">Edit</button></th>
-                <th><button type="submit" name="btc_submit" class="btn btn-primary">Edit</button></th>
+                <th scope="row">{{$user["id"]}}</th>
+                <td>{{$user["full_name"]}}</td>
+                <td>{{$user["username"]}}</td>
+                <td>{{$user["email"]}}</td> 
+                <td>{{$user["phone_no"]}}</td> 
+                <td>{{$user["invested"]}}</td> 
+                <td>{{$user["wallet_balance"]}}</td> 
+                <td>{{$user["country"]}}</td>  
+                <th><a href="{{ route('viewUser', ['id' => $user['id']]) }}" class="btn btn-primary">Edit</a></th>
             </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <th><button type="submit" name="btc_submit" class="btn btn-primary">Edit</button></th>
-                <th><button type="submit" name="btc_submit" class="btn btn-primary">Edit</button></th>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <th><button type="submit" name="btc_submit" class="btn btn-primary">Edit</button></th>
-                <th><button type="submit" name="btc_submit" class="btn btn-primary">Edit</button></th>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <th><button type="submit" name="btc_submit" class="btn btn-primary">Edit</button></th>
-                <th><button type="submit" name="btc_submit" class="btn btn-primary">Edit</button></th>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-                <th><button type="submit" name="btc_submit" class="btn btn-primary">Edit</button></th>
-                <th><button type="submit" name="btc_submit" class="btn btn-primary">Edit</button></th>
-            </tr>
+            @endforeach
         </tbody>
     </table>
 @endsection

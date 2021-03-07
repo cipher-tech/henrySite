@@ -54,30 +54,30 @@
 
                 <li class="nav-item-title">Pages</li>
                 <li class="nav-item ">
-                    <a href="{{route('fund')}}" class="nav-link">
+                    <a href="{{route('adminFund')}}" class="nav-link">
                         <span class="icon"><i class='bx bxs-duplicate'></i></span>
-                        <span class="menu-title">Fund Account</span>
+                        <span class="menu-title">Deposits</span>
                     </a>
                 </li>
 
                 <li class="nav-item ">
-                    <a href="{{route('withdraw')}}" class="nav-link">
+                    <a href="{{route('adminWithdrawal')}}" class="nav-link">
                         <span class="icon"><i class='bx bx-wallet'></i></span>
-                        <span class="menu-title">Withdraw</span>
+                        <span class="menu-title">Withdrawals</span>
                     </a>
                 </li>
-                <li class="nav-item ">
+                {{-- <li class="nav-item ">
                     <a href="{{route('trade-history')}}" class="nav-link">
                         <span class="icon"><i class=' bx bx-station'></i></span>
                         <span class="menu-title">Trade History</span>
                     </a>
-                </li>
-                <li class="nav-item ">
-                    <a href="{{route('profile')}}" class="nav-link">
+                </li> --}}
+                {{-- <li class="nav-item ">
+                    <a href="{{route('viewUser')}}" class="nav-link">
                         <span class="icon"><i class='bx bx-user'></i></span>
                         <span class="menu-title">Update Profile</span>
                     </a>
-                </li>
+                </li> --}}
                 <li class="nav-item-title">Support</li>
 
                 <li class="nav-item">

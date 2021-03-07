@@ -7,7 +7,7 @@
             <img src="assets/images/banner/banner-bg2.jpg" alt="banner">
         </div>
         <div class="banner-bg d-none d-lg-block bg_img"
-            data-background="https://ameristock.net/assets/images/banner/banner.jpg">
+            data-background="https://Stockmutualinvest.net/assets/images/banner/banner.jpg">
             <div class="chart-1 wow fadeInLeft" data-wow-delay=".5s" data-wow-duration=".7s">
                 <img src="assets/images/banner/chart1.png" alt="banner">
             </div>
@@ -135,10 +135,10 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="section-header left-style">
-                        <span class="cate">WELCOME TO AmeriStock</span>
-                        <h2 class="title">about ameristock</h2>
+                        <span class="cate">WELCOME TO Stockmutualinvest</span>
+                        <h2 class="title">about Stockmutualinvest</h2>
                         <p>
-                            AmeriStock is a Bitcoin-based platform, offering a leveraged trading on several digital assets
+                            Stockmutualinvest is a Bitcoin-based platform, offering a leveraged trading on several digital assets
                             including Bitcoin, Ethereum, Litecoin, and Ripple. The company was founded in 2018 and from the
                             very first day, we have grown exponentially and currently serve clients in more than 150
                             countries. We are affliated with a lot of high profile companies like Ameriprise financial,
@@ -191,7 +191,7 @@
 
     <!--=======Feature-Section Starts Here=======-->
     <section class="feature-section padding-top padding-bottom bg_img"
-        data-background="./https://ameristock.com/https://ameristock.net/assets/images/feature/feature-bg.png" id="feature">
+        data-background="./https://Stockmutualinvest.com/https://Stockmutualinvest.net/assets/images/feature/feature-bg.png" id="feature">
         <div class="ball-1" data-paroller-factor="-0.30" data-paroller-factor-lg="0.60" data-paroller-type="foreground"
             data-paroller-direction="horizontal">
             <img src="assets/images/balls/ball1.png" alt="balls">
@@ -509,7 +509,7 @@
     <!--=======Latest-Transaction-Section Starts Here=======-->
     <section class="latest-transaction padding-top padding-bottom" id="transaction">
         <div class="transaction-bg bg_img"
-            data-background="https://ameristock.net/assets/images/transaction/transaction-bg.png">
+            data-background="https://Stockmutualinvest.net/assets/images/transaction/transaction-bg.png">
             <span class="d-none">Image</span>
         </div>
         <div class="container">
@@ -976,7 +976,7 @@
                         </div>
                     </div>
                     <div class="affiliate-bottom">
-                        <h6 class="title">Make money with AmeriStock</h6>
+                        <h6 class="title">Make money with Stockmutualinvest</h6>
                     </div>
                 </div>
                 <div class="col-lg-5 d-lg-block d-none">
@@ -992,7 +992,7 @@
 
     <!--=======Check-Section Starts Here=======-->
     <section class="call-section call-overlay bg_img"
-        data-background="https://ameristock.net/assets/images/call/call-bg.jpg">
+        data-background="https://Stockmutualinvest.net/assets/images/call/call-bg.jpg">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-7 col-xl-6">

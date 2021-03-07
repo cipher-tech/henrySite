@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=1024">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>AmeriSTock | Home</title>
+    <title>Stockmutualinvest | Home</title>
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
@@ -47,7 +47,7 @@
                                     <a href="#0"><i class="flaticon-support"></i>Support</a>
                                 </li>
                                 <li>
-                                    <a href="Mailto:support@ameristock.net"><i class="flaticon-email"></i>support@ameristock.net </a>
+                                    <a href="Mailto:support@Stockmutualinvest.net"><i class="flaticon-email"></i>support@Stockmutualinvest.net </a>
                                 </li>
                             </ul>
                         </div>
@@ -59,7 +59,7 @@
                     <div class="header-area">
                         <div class="logo">
                             <a href="index-2.html">
-                                <img src="assets/images/logo/Ameristock.png" alt="logo">
+                                <img src="assets/images/logo/Stockmutualinvest.png" alt="logo">
                             </a>
                         </div>
                         <ul class="menu">
@@ -99,7 +99,7 @@
             </div>
         </header>
   <!--=======Banner-Section Starts Here=======-->
-        <section class="bg_img hero-section-2 left-bottom-lg-max" data-background="https://ameristock.net/assets/images/about/hero-bg5.png">
+        <section class="bg_img hero-section-2 left-bottom-lg-max" data-background="https://Stockmutualinvest.net/assets/images/about/hero-bg5.png">
             <div class="container">
                 <div class="hero-content text-white">
                     <h1 class="title">Contact</h1>
@@ -125,7 +125,7 @@
                         <div class="col-lg-5 col-xl-4 offset-xl-1">
                             <div class="contact-header">
                                 <h4 class="title">Get in touch:</h4>
-                                <p>support@ameristock.net</p>
+                                <p>support@Stockmutualinvest.net</p>
                                     <br>
                                 <h4 class="title">Phone Number:</h4>
                                 <p>
@@ -151,7 +151,7 @@
                 <div class="container">
                     <div class="newslater-area">
                         <div class="newslater-content padding-bottom padding-top">
-                            <span class="cate">SUBSCRIBE TO AmeriStock</span>
+                            <span class="cate">SUBSCRIBE TO Stockmutualinvest</span>
                             <h3 class="title">To Get Exclusive Benefits</h3>
                             <form class="newslater-form">
                                 <input type="text" placeholder="Enter Your Email Here" required="">
@@ -186,7 +186,7 @@
                 <div class="footer-top">
                     <div class="logo">
                         <a href="index-2.html">
-                            <img src="assets/images/logo/Ameristock White - Copy.png" alt="logo">
+                            <img src="assets/images/logo/Stockmutualinvest White - Copy.png" alt="logo">
                         </a>
                     </div>
                     <ul class="links">

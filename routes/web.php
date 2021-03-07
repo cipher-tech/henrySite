@@ -59,9 +59,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::group(['prefix' => 'dashboard', "middleware" => "auth:sanctum"], function () {
     Route::get('/', [UserController::class, "index"])->name("dashboard");
 
-    Route::get('/fund', function () {
-        return view('dashboard.fund');
-    })->name("fund");
+    Route::get('/fund', [UserController::class, "deposit"])->name("fund");
+    Route::post('/fund', [UserController::class, "storeDeposit"])->name("saveFund");
     
     Route::get('/profile', function () {
         return view('dashboard.profile');
@@ -71,9 +70,9 @@ Route::group(['prefix' => 'dashboard', "middleware" => "auth:sanctum"], function
         return view('dashboard.trade-history');
     })->name("trade-history");
 
-    Route::get('/withdraw', function () {
-        return view('dashboard.withdraw');
-    })->name("withdraw");
+    Route::get('/withdraw', [UserController::class, "withdrawal"])->name("withdraw");
+    Route::post('/withdraw', [UserController::class, "storeWithdrawal"])->name("saveWithdrawal");
+
     Route::get('/user/profile', function () {
         return view('profile.show');
     })->name("userProfile");
@@ -82,21 +81,16 @@ Route::group(['prefix' => 'dashboard', "middleware" => "auth:sanctum"], function
 Route::group(['prefix' => 'admin'], function () {
     Route::get('/', [AdminController::class, "index"])->name("adminDashboard");
  
-    Route::get('/fund', function () {
-        return view('admin.fund');
-    })->name("adminFund");
+    Route::get('/deposits', [AdminController::class, "getDeposits"])->name("adminFund");
     
-    Route::get('/profile', function () {
-        return view('admin.profile');
-    })->name("adminProfile");
+    Route::get('/viewUser/{id}', [AdminController::class, "viewUser"])->name("viewUser");
+    Route::post('/viewUser/{id}', [AdminController::class, "storeUser"]);
     
-    Route::get('/trade-history', function () {
-        return view('admin.trade-history');
-    })->name("adminHistory");
+    // Route::get('/trade-history', function () {
+    //     return view('admin.trade-history');
+    // })->name("adminHistory");
 
-    Route::get('/withdraw', function () {
-        return view('admin.withdraw');
-    })->name("adminWithdrawal");
+    Route::get('/withdraw', [AdminController::class, "getWithdrawals"])->name("adminWithdrawal");
 });
 
 

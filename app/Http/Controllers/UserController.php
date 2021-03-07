@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Deposit;
 use App\Models\User;
+use App\Models\Withdrawal;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
+
 
 class UserController extends Controller
 {
@@ -19,69 +23,71 @@ class UserController extends Controller
         return view('dashboard.dashboard', compact("user"));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function deposit()
     {
-        //
+        $user = Auth()->user();
+        $deposits = $user->deposits;
+        $message = '';
+        return view('dashboard.fund', compact("user", "message", 'deposits'));
+    }
+    public function storeDeposit(Request $request)
+    {
+        $user = Auth()->user();
+        Validator::make($request->all(), [
+            'amount' => ['required', 'integer', 'min:500'],
+            'email' => ['required', 'string', 'email', 'max:255'],
+            "username" => ['required', 'string', "max:255"],
+            "transaction_id" => ['required', 'string', 'max:255'],
+        ])->validate();
+
+        if ($deposit = Deposit::create([
+            "user_id" => $user->id,
+            "email" => $user->email,
+            "username" => $user->username,
+            "transaction_id" => $request->transaction_id,
+            "amount" => $request->amount,
+            "status" => "pending",
+            "coin_address" => $request->coin_address ? $request->coin_address : null,
+        ])) {
+            $message = "Request Successful";
+        }
+        return view('dashboard.fund', compact("user", "message"));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+    public function withdrawal()
     {
-        //
+        $user = Auth()->user();
+        $withdrawals = $user->withdrawals;
+
+        $message = '';
+        return view('dashboard.withdraw', compact("user", "message", 'withdrawals'));
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
+    public function storeWithdrawal(Request $request)
     {
-        //
-    }
+        $user = Auth()->user();
+        Validator::make($request->all(), [
+            'amount' => ['required', 'integer', 'min:500'],
+            "type" => ['required', 'string', "max:255"],
+            "coin_address" => ['required', 'string', "max:255"],
+        ])->validate();
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
+        if ($withdrawal = Withdrawal::create([
+            "user_id" => $user->id,
+            "email" => $user->email,
+            "username" => $user->username,
+            "type" => $request->type,
+            "amount" => $request->amount,
+            "transaction_id" => mt_rand(0, 4488888),
+            "status" => "pending",
+            "coin_address" => $request->coin_address ? $request->coin_address : null,
+        ])) {
+            $message = "Request Successful";
+        }
+        return view('dashboard.withdraw', compact("user", "message"));
     }
 }
+
+/* foreach ($errors->all() as $message) {
+    //
+} */

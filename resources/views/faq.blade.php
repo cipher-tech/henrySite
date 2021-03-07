@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=1024">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>AmeriSTock | Home</title>
+    <title>Stockmutualinvest | Home</title>
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
@@ -47,7 +47,7 @@
                                     <a href="#0"><i class="flaticon-support"></i>Support</a>
                                 </li>
                                 <li>
-                                    <a href="Mailto:support@ameristock.net"><i class="flaticon-email"></i>support@ameristock.net </a>
+                                    <a href="Mailto:support@Stockmutualinvest.net"><i class="flaticon-email"></i>support@Stockmutualinvest.net </a>
                                 </li>
                             </ul>
                         </div>
@@ -59,7 +59,7 @@
                     <div class="header-area">
                         <div class="logo">
                             <a href="index-2.html">
-                                <img src="assets/images/logo/Ameristock.png" alt="logo">
+                                <img src="assets/images/logo/Stockmutualinvest.png" alt="logo">
                             </a>
                         </div>
                         <ul class="menu">
@@ -100,7 +100,7 @@
         </header>
 
         <!--=======Banner-Section Starts Here=======-->
-        <section class="bg_img hero-section-2" data-background="https://ameristock.net/assets/images/about/hero-bg3.jpg">
+        <section class="bg_img hero-section-2" data-background="https://Stockmutualinvest.net/assets/images/about/hero-bg3.jpg">
             <div class="container">
                 <div class="hero-content text-white">
                     <h1 class="title">faq</h1>
@@ -189,7 +189,7 @@
                                     </div>
                                     <div class="faq-content">
                                         <p>
-                                            No, it is free to open an account with AmeriStock.
+                                            No, it is free to open an account with Stockmutualinvest.
                                         </p>
                                     </div>
                                 </div>
@@ -211,7 +211,7 @@
                                     </div>
                                     <div class="faq-content">
                                         <p>
-                                            At AmeriStock we remain committed to creating a dynamic and most innovative platform that equips our users with all necessary tools for their trading activities. In a such rapidly-changing and ever-expanding industry, we continuously refine our services to cater to the needs of traders worldwide.
+                                            At Stockmutualinvest we remain committed to creating a dynamic and most innovative platform that equips our users with all necessary tools for their trading activities. In a such rapidly-changing and ever-expanding industry, we continuously refine our services to cater to the needs of traders worldwide.
                                         </p>
                                     </div>
                                 </div>
@@ -255,17 +255,17 @@
                                     </div>
                                     <div class="faq-content">
                                         <p>
-                                            ameristock processes all withdrawal requests within 1 hour. However verification may take longer time, if client didn't submit all requested documents in time.
+                                            Stockmutualinvest processes all withdrawal requests within 1 hour. However verification may take longer time, if client didn't submit all requested documents in time.
                                     </p></div>
                                 </div>
                                 <div class="faq-item">
                                     <div class="faq-title">
-                                        <h5 class="title">How can I close my ameristock account?</h5>
+                                        <h5 class="title">How can I close my Stockmutualinvest account?</h5>
                                         <span class="right-icon"></span>
                                     </div>
                                     <div class="faq-content">
                                         <p>
-                                            Please email at support@ameristock.com to request closing of your account. You will receive a confirmation when this request will be completed.
+                                            Please email at support@Stockmutualinvest.com to request closing of your account. You will receive a confirmation when this request will be completed.
                                         </p>
                                     </div>
                                 </div>
@@ -296,7 +296,7 @@
                 <div class="container">
                     <div class="newslater-area">
                         <div class="newslater-content padding-bottom padding-top">
-                            <span class="cate">SUBSCRIBE TO AmeriStock</span>
+                            <span class="cate">SUBSCRIBE TO Stockmutualinvest</span>
                             <h3 class="title">To Get Exclusive Benefits</h3>
                             <form class="newslater-form">
                                 <input type="text" placeholder="Enter Your Email Here" required="">
@@ -331,7 +331,7 @@
                 <div class="footer-top">
                     <div class="logo">
                         <a href="index-2.html">
-                            <img src="assets/images/logo/Ameristock White - Copy.png" alt="logo">
+                            <img src="assets/images/logo/Stockmutualinvest White - Copy.png" alt="logo">
                         </a>
                     </div>
                     <ul class="links">

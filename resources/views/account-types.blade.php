@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=1024">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>AmeriSTock | Home</title>
+    <title>Stockmutualinvest | Home</title>
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
@@ -47,7 +47,7 @@
                                     <a href="#0"><i class="flaticon-support"></i>Support</a>
                                 </li>
                                 <li>
-                                    <a href="Mailto:support@ameristock.net"><i class="flaticon-email"></i>support@ameristock.net </a>
+                                    <a href="Mailto:support@Stockmutualinvest.net"><i class="flaticon-email"></i>support@Stockmutualinvest.net </a>
                                 </li>
                             </ul>
                         </div>
@@ -59,7 +59,7 @@
                     <div class="header-area">
                         <div class="logo">
                             <a href="index-2.html">
-                                <img src="assets/images/logo/Ameristock.png" alt="logo">
+                                <img src="assets/images/logo/Stockmutualinvest.png" alt="logo">
                             </a>
                         </div>
                         <ul class="menu">
@@ -98,7 +98,7 @@
                 </div>
             </div>
         </header>    <!--=======Banner-Section Starts Here=======-->
-        <section class="bg_img hero-section-2" data-background="https://ameristock.net/assets/images/about/hero-bg2.jpg">
+        <section class="bg_img hero-section-2" data-background="https://Stockmutualinvest.net/assets/images/about/hero-bg2.jpg">
             <div class="container">
                 <div class="hero-content text-white">
                     <h1 class="title">Plan</h1>
@@ -278,7 +278,7 @@
                 <div class="container">
                     <div class="newslater-area">
                         <div class="newslater-content padding-bottom padding-top">
-                            <span class="cate">SUBSCRIBE TO AmeriStock</span>
+                            <span class="cate">SUBSCRIBE TO Stockmutualinvest</span>
                             <h3 class="title">To Get Exclusive Benefits</h3>
                             <form class="newslater-form">
                                 <input type="text" placeholder="Enter Your Email Here" required="">
@@ -313,7 +313,7 @@
                 <div class="footer-top">
                     <div class="logo">
                         <a href="index-2.html">
-                            <img src="assets/images/logo/Ameristock White - Copy.png" alt="logo">
+                            <img src="assets/images/logo/Stockmutualinvest White - Copy.png" alt="logo">
                         </a>
                     </div>
                     <ul class="links">
