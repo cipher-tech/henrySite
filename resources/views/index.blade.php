@@ -4,53 +4,53 @@
     <!--=======Banner-Section Starts Here=======-->
     <section class="banner-section" id="home">
         <div class="banner-bg d-lg-none">
-            <img src="assets/images/banner/banner-bg2.jpg" alt="banner">
+            <img src="/assets/images/banner/banner-bg2.jpg" alt="banner">
         </div>
         <div class="banner-bg d-none d-lg-block bg_img"
             data-background="https://Stockmutualinvest.net/assets/images/banner/banner.jpg">
             <div class="chart-1 wow fadeInLeft" data-wow-delay=".5s" data-wow-duration=".7s">
-                <img src="assets/images/banner/chart1.png" alt="banner">
+                <img src="/assets/images/banner/chart1.png" alt="banner">
             </div>
             <div class="chart-2 wow fadeInDown" data-wow-delay="1s" data-wow-duration=".7s">
-                <img src="assets/images/banner/chart2.png" alt="banner">
+                <img src="/assets/images/banner/chart2.png" alt="banner">
             </div>
             <div class="chart-3 wow fadeInRight" data-wow-delay="1.5s" data-wow-duration=".7s">
-                <img src="assets/images/banner/chart3.png" alt="banner">
+                <img src="/assets/images/banner/chart3.png" alt="banner">
             </div>
             <div class="chart-4 wow fadeInUp" data-wow-delay="2s" data-wow-duration=".7s">
-                <img src="assets/images/banner/clock.png" alt="banner">
+                <img src="/assets/images/banner/clock.png" alt="banner">
             </div>
         </div>
         <div class="animation-area d-none d-lg-block">
             <div class="plot">
-                <img src="assets/images/banner/plot.png" alt="banner">
+                <img src="/assets/images/banner/plot.png" alt="banner">
             </div>
             <div class="element-1 wow fadeIn" data-wow-delay="1s">
-                <img src="assets/images/banner/light.png" alt="banner">
+                <img src="/assets/images/banner/light.png" alt="banner">
             </div>
             <div class="element-2 wow fadeIn" data-wow-delay="1s">
-                <img src="assets/images/banner/coin1.png" alt="banner">
+                <img src="/assets/images/banner/coin1.png" alt="banner">
             </div>
             <div class="element-3 wow fadeIn" data-wow-delay="1s">
-                <img src="assets/images/banner/coin2.png" alt="banner">
+                <img src="/assets/images/banner/coin2.png" alt="banner">
             </div>
             <div class="element-4 wow fadeIn" data-wow-delay="1s">
-                <img src="assets/images/banner/coin3.png" alt="banner">
+                <img src="/assets/images/banner/coin3.png" alt="banner">
             </div>
             <div class="element-5 wow fadeIn" data-wow-delay="1s">
-                <img src="assets/images/banner/coin4.png" alt="banner">
+                <img src="/assets/images/banner/coin4.png" alt="banner">
             </div>
             <div class="element-6 wow fadeIn" data-wow-delay="1s">
-                <img src="assets/images/banner/coin5.png" alt="banner">
+                <img src="/assets/images/banner/coin5.png" alt="banner">
             </div>
             <div class="element-7 wow fadeIn" data-wow-delay="1s">
-                <img src="assets/images/banner/coin6.png" alt="banner">
+                <img src="/assets/images/banner/coin6.png" alt="banner">
             </div>
             <div class="element-8 wow fadeIn" data-wow-delay="1s">
-                <img src="assets/images/banner/sheild.png" alt="banner">
+                <img src="/assets/images/banner/sheild.png" alt="banner">
             </div>
             <div class="element-9 wow fadeIn" data-wow-delay="1s">
-                <img src="assets/images/banner/coin7.png" alt="banner">
+                <img src="/assets/images/banner/coin7.png" alt="banner">
             </div>
         </div>
 
@@ -194,15 +194,15 @@
         data-background="./https://Stockmutualinvest.com/https://Stockmutualinvest.net/assets/images/feature/feature-bg.png" id="feature">
         <div class="ball-1" data-paroller-factor="-0.30" data-paroller-factor-lg="0.60" data-paroller-type="foreground"
             data-paroller-direction="horizontal">
-            <img src="assets/images/balls/ball1.png" alt="balls">
+            <img src="/assets/images/balls/ball1.png" alt="balls">
         </div>
         <div class="ball-2" data-paroller-factor="-0.30" data-paroller-factor-lg="0.60" data-paroller-type="foreground"
             data-paroller-direction="horizontal">
-            <img src="assets/images/balls/ball2.png" alt="balls">
+            <img src="/assets/images/balls/ball2.png" alt="balls">
         </div>
         <div class="ball-3" data-paroller-factor="0.30" data-paroller-factor-lg="-0.30" data-paroller-type="foreground"
             data-paroller-direction="horizontal">
-            <img src="assets/images/balls/ball3.png" alt="balls">
+            <img src="/assets/images/balls/ball3.png" alt="balls">
         </div>
         <div class="container">
             <div class="row justify-content-center">
@@ -352,11 +352,11 @@
     <section class="offer-section padding-top padding-bottom pb-max-md-0" id="plan">
         <div class="ball-group-1" data-paroller-factor="-0.30" data-paroller-factor-lg="0.60"
             data-paroller-type="foreground" data-paroller-direction="horizontal">
-            <img src="assets/images/balls/ball-group1.png" alt="balls">
+            <img src="/assets/images/balls/ball-group1.png" alt="balls">
         </div>
         <div class="ball-group-2" data-paroller-factor="0.30" data-paroller-factor-lg="-0.30"
             data-paroller-type="foreground" data-paroller-direction="horizontal">
-            <img src="assets/images/balls/ball-group2.png" alt="balls">
+            <img src="/assets/images/balls/ball-group2.png" alt="balls">
         </div>
         <div class="container">
             <div class="row justify-content-center">

@@ -99,7 +99,7 @@
             </div>
         </header>
      <!--=======Banner-Section Starts Here=======-->
-        <section class="bg_img hero-section-2" data-background="https://Stockmutualinvest.net/assets/images/images/about/hero-bg2.jpg">
+        <section class="bg_img hero-section-2" data-background="/assets/images/about/abot.png">
             <div class="container">
                 <div class="hero-content text-white">
                     <h1 class="title">Join Us</h1>
@@ -114,7 +114,7 @@
                 </div>
             </div>
             <div class="hero-shape">
-                <img class="wow slideInUp" src="https://Stockmutualinvest.net/assets/images/images/about/hero-shape1.png" alt="about" data-wow-duration="1s">
+                <img class="wow slideInUp" src="/assets/images/about/aboutX.png" alt="about" data-wow-duration="1s">
             </div>
         </section>
         <!--=======Banner-Section Ends Here=======-->
@@ -187,6 +187,7 @@
                             <x-jet-authentication-card>
                                 <x-slot name="logo">
                                     <x-jet-authentication-card-logo />
+                                    {{-- <img src="assets/images/logo/Stockmutualinvest.png" alt="logo"> --}}
                                 </x-slot>
                         
                                 <x-jet-validation-errors class="mb-4" />
@@ -306,7 +307,7 @@
                 <div class="footer-top">
                     <div class="logo">
                         <a href="index-2.html">
-                            <img src="assets/images/logo/Stockmutualinvest White - Copy.png" alt="logo">
+                            <img src="assets/images/logo/Stockmutualinvest.png" alt="logo">
                         </a>
                     </div>
                     <ul class="links">

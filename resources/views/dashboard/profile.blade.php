@@ -24,7 +24,7 @@
 
             <div class="card shadow-base bd-0 rounded-0 widget-4">
                 <div class="card-body">
-                    <h4 class="tx-normal tx-roboto tx-white">chu</h4>
+                    <h4 class="tx-normal tx-roboto tx-white"> {{$user->username}} </h4>
 
                 </div><!-- card-body -->
             </div><!-- card -->
@@ -48,26 +48,26 @@
                                 <h6 class="tx-gray-800 tx-uppercase tx-semibold tx-13 mg-b-25">Contact Information</h6>
 
                                 <label class="tx-10 tx-uppercase tx-mont tx-medium tx-spacing-1 mg-b-2">Full Name</label>
-                                <p class="tx-info mg-b-25">chu</p>
+                                <p class="tx-info mg-b-25"> {{$user->full_name}} </p>
 
-                                <label class="tx-10 tx-uppercase tx-mont tx-medium tx-spacing-1 mg-b-2">Account
-                                    Status</label>
-                                <p class="tx-info mg-b-25"> Not verified</p>
+                                <label class="tx-10 tx-uppercase tx-mont tx-medium tx-spacing-1 mg-b-2">Username</label>
+                                <p class="tx-info mg-b-25"> {{$user->username}}</p>
 
                                 <label class="tx-10 tx-uppercase tx-mont tx-medium tx-spacing-1 mg-b-2">Phone Number</label>
-                                <p class="tx-info mg-b-25">08088044356</p>
+                                <p class="tx-info mg-b-25">{{$user->phone_no}}</p>
 
                                 <label class="tx-10 tx-uppercase tx-mont tx-medium tx-spacing-1 mg-b-2">Email
                                     Address</label>
-                                <p class="tx-inverse mg-b-25">cipher@gmail.com</p>
+                                <p class="tx-inverse mg-b-25">{{$user->email}}</p>
 
                                 <label class="tx-10 tx-uppercase tx-mont tx-medium tx-spacing-1 mg-b-2">Country</label>
-                                <p class="tx-inverse mg-b-25">Ghana</p>
+                                <p class="tx-inverse mg-b-25">{{$user->country}}</p>
 
                                 <h6 class="tx-gray-800 tx-uppercase tx-semibold tx-13 mg-b-25">Other Information</h6>
 
-                                <label class="tx-10 tx-uppercase tx-mont tx-medium tx-spacing-1 mg-b-2"> Trading
-                                    Currency</label>
+                                <label class="tx-10 tx-uppercase tx-mont tx-medium tx-spacing-1 mg-b-2"> 
+                                    {{$user->created_at}}    
+                                </label>
                                 <p class="tx-inverse mg-b-25"></p>
 
                             </div><!-- card -->

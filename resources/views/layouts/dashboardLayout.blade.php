@@ -24,8 +24,8 @@
     <!-- Start Sidemenu Area -->
     <div class="sidemenu-area">
         <div class="sidemenu-header">
-            <a href="{{route('dashboard')}}" class="navbar-brand d-flex align-items-center">
-                <img src="/assets/images/logo/Ameristock.png" alt="logo">
+            <a href="{{ route('index') }}" class="navbar-brand d-flex align-items-center">
+                <img src="/assets/images/logo/Stockmutualinvest.png" alt="logo">
             </a>
 
             <div class="burger-menu d-none d-lg-block">
@@ -46,7 +46,7 @@
                 <li class="nav-item-title">Main</li>
 
                 <li class="nav-item mm-active">
-                    <a href="{{route('dashboard')}}" class="nav-link">
+                    <a href="{{ route('dashboard') }}" class="nav-link">
                         <span class="icon"><i class='bx bx-home-circle'></i></span>
                         <span class="menu-title">Dashboard</span>
                     </a>
@@ -54,26 +54,26 @@
 
                 <li class="nav-item-title">Pages</li>
                 <li class="nav-item ">
-                    <a href="{{route('fund')}}" class="nav-link">
+                    <a href="{{ route('fund') }}" class="nav-link">
                         <span class="icon"><i class='bx bxs-duplicate'></i></span>
                         <span class="menu-title">Fund Account</span>
                     </a>
                 </li>
 
                 <li class="nav-item ">
-                    <a href="{{route('withdraw')}}" class="nav-link">
+                    <a href="{{ route('withdraw') }}" class="nav-link">
                         <span class="icon"><i class='bx bx-wallet'></i></span>
                         <span class="menu-title">Withdraw</span>
                     </a>
                 </li>
-                <li class="nav-item ">
+                {{-- <li class="nav-item ">
                     <a href="{{route('trade-history')}}" class="nav-link">
                         <span class="icon"><i class=' bx bx-station'></i></span>
                         <span class="menu-title">Trade History</span>
                     </a>
-                </li>
+                </li> --}}
                 <li class="nav-item ">
-                    <a href="{{route('profile')}}" class="nav-link">
+                    <a href="{{ route('profile') }}" class="nav-link">
                         <span class="icon"><i class='bx bx-user'></i></span>
                         <span class="menu-title">Update Profile</span>
                     </a>
@@ -81,7 +81,7 @@
                 <li class="nav-item-title">Support</li>
 
                 <li class="nav-item">
-                    <a href="mailto:support@mutualstockinvest.com" class="nav-link">
+                    <a href="mailto:support@mut" class="nav-link">
                         <span class="icon"><i class='bx bx-support'></i></span>
                         <span class="menu-title">Support</span>
                     </a>
@@ -114,8 +114,8 @@
 
 
                     <li class="nav-item">
-                        <a href="https://mutualstockinvest.com//profile" class="nav-link" data-toggle="tooltip"
-                            data-placement="bottom" title="Edit profile">
+                        <a href="{{route("userProfile")}}" {{-- href="https://mutualstockinvest.com//profile" --}} class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                            title="Edit profile">
                             <i class='bx bx-edit'></i>
                         </a>
                     </li>
@@ -192,17 +192,24 @@
                         <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <div class="menu-profile">
-                                <span class="name">Hi! chu</span>
-                                <img src="https://mutualstockinvest.com//assets/images/table/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
-                                    class="rounded-circle" alt="image">
+                                <span class="name">
+                                    {{-- @empty($user)
+                                        @endempty --}}
+                                    @if ($user)
+                                        {{ $user->username }}
+                                    @endif
+                                </span>
+                                <span class="icon rounded-circle h2"><i class='bx bx-user'></i></span>
+                                {{-- <img src="https://mutualstockinvest.com//assets/images/table/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
+                                    class="rounded-circle" alt="image"> --}}
                             </div>
                         </a>
 
                         <div class="dropdown-menu">
                             <div class="dropdown-header d-flex flex-column align-items-center">
                                 <div class="figure mb-3">
-                                    <img src="https://mutualstockinvest.com//assets/images/table/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
-                                        class="rounded-circle" alt="image">
+                                    {{-- <img src="https://mutualstockinvest.com//assets/images/table/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
+                                        class="rounded-circle" alt="image"> --}}
                                 </div>
                                 <div class="info text-center">
                                     <span class="name">chu</span>
@@ -213,7 +220,7 @@
                             <div class="dropdown-body">
                                 <ul class="profile-nav p-0 pt-3">
                                     <li class="nav-item">
-                                        <a href="https://mutualstockinvest.com//profile" class="nav-link">
+                                        <a href="{{route("profile")}}" {{-- href="https://mutualstockinvest.com//profile" --}} class="nav-link">
                                             <i class='bx bx-user'></i> <span>Profile</span>
                                         </a>
                                     </li>
@@ -223,9 +230,12 @@
                             <div class="dropdown-footer">
                                 <ul class="profile-nav">
                                     <li class="nav-item">
-                                        <a href="https://mutualstockinvest.com//logout" class="nav-link">
-                                            <i class='bx bx-log-out'></i> <span>Logout</span>
-                                        </a>
+                                        <form action="{{route("logout")}}" method="POST">
+                                            @csrf
+                                            <button type="submit" class="nav-link">
+                                                <i class='bx bx-log-out'></i> <span>Logout</span>
+                                            </button>
+                                        </form>
                                     </li>
                                 </ul>
                             </div>
@@ -248,7 +258,7 @@
         <footer class="footer-area">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-sm-6 col-md-6">
-                    <p>Copyright <i class='bx bx-copyright'></i> 2020 <a href="#">Mutualstockinvest</a>. All rights
+                    <p>Copyright <i class='bx bx-copyright'></i> 2021 <a href="/">Stockmutualinvest</a>. All rights
                         reserved</p>
                 </div>
             </div>

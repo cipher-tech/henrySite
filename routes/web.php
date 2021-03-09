@@ -47,9 +47,9 @@ Route::get('/forgot-password', function () {
     return view('auth.forgot-password');
 })->name("forgot-password");
 
-Route::get('/register', function () {
-    return view('register');
-})->name("register");
+// Route::get('/register', function () {
+//     return view('register');
+// })->name("register");
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
@@ -62,13 +62,11 @@ Route::group(['prefix' => 'dashboard', "middleware" => "auth:sanctum"], function
     Route::get('/fund', [UserController::class, "deposit"])->name("fund");
     Route::post('/fund', [UserController::class, "storeDeposit"])->name("saveFund");
     
-    Route::get('/profile', function () {
-        return view('dashboard.profile');
-    })->name("profile");
+    Route::get('/profile', [UserController::class, "profile"])->name("profile");
     
-    Route::get('/trade-history', function () {
-        return view('dashboard.trade-history');
-    })->name("trade-history");
+    // Route::get('/trade-history', function () {
+    //     return view('dashboard.trade-history');
+    // })->name("trade-history");
 
     Route::get('/withdraw', [UserController::class, "withdrawal"])->name("withdraw");
     Route::post('/withdraw', [UserController::class, "storeWithdrawal"])->name("saveWithdrawal");

@@ -49,7 +49,7 @@
                                     <a href="#0"><i class="flaticon-support"></i>Support</a>
                                 </li>
                                 <li>
-                                    <a href="Mailto:support@Stockmutualinvest.net"><i
+                                    <a href="Mailto:support@"><i
                                             class="flaticon-email"></i>support@Stockmutualinvest.net </a>
                                 </li>
                             </ul>
@@ -147,8 +147,8 @@
             <div class="container">
                 <div class="footer-top">
                     <div class="logo">
-                        <a href="index-2.html">
-                            <img src="assets/images/logo/Stockmutualinvest White - Copy.png" alt="logo">
+                        <a href="/">
+                            <img src="assets/images/logo/Stockmutualinvest.png" alt="logo">
                         </a>
                     </div>
                     <ul class="links">

@@ -168,7 +168,7 @@
                             </div>
                         </div>
                         <div class="offer-footer">
-                            <a href="signup.html" class="custom-button">invest now</a>
+                            <a href="{{ route('fund')}}" class="custom-button">invest now</a>
                         </div>
                     </div>
                     <div class="offer-item">
@@ -199,7 +199,7 @@
                             </div>
                         </div>
                         <div class="offer-footer">
-                            <a href="signup.html" class="custom-button">invest now</a>
+                            <a href="{{ route('fund') }}" class="custom-button">invest now</a>
                         </div>
                     </div>
                     <div class="offer-item">
@@ -230,7 +230,7 @@
                             </div>
                         </div>
                         <div class="offer-footer">
-                            <a href="signup.html" class="custom-button">invest now</a>
+                            <a href="{{ route('fund') }}" class="custom-button">invest now</a>
                         </div>
                     </div>
                     <div class="offer-item">
@@ -261,7 +261,7 @@
                             </div>
                         </div>
                         <div class="offer-footer">
-                            <a href="signup.html" class="custom-button">invest now</a>
+                            <a href="{{ route('fund') }}" class="custom-button">invest now</a>
                         </div>
                     </div>
                 </div>

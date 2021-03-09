@@ -82,9 +82,16 @@ class UserController extends Controller
             "status" => "pending",
             "coin_address" => $request->coin_address ? $request->coin_address : null,
         ])) {
+            $withdrawals = $user->withdrawals;
             $message = "Request Successful";
         }
-        return view('dashboard.withdraw', compact("user", "message"));
+        return view('dashboard.withdraw', compact("user", "message", 'withdrawals'));
+    }
+
+    public function profile()
+    {
+        $user = Auth()->user();
+        return view('dashboard.profile', compact("user"));
     }
 }
 

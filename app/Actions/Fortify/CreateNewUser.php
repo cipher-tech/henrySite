@@ -3,6 +3,7 @@
 namespace App\Actions\Fortify;
 
 use App\Models\User;
+use App\Notifications\RegisterNotification;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
@@ -30,7 +31,11 @@ class CreateNewUser implements CreatesNewUsers
             'terms' => Jetstream::hasTermsAndPrivacyPolicyFeature() ? ['required', 'accepted'] : '',
         ])->validate();
 
-        return User::create([
+        $data = [
+            "full_name" => $input['full_name'],
+            "username" => $input['username'],
+        ];
+        $user = User::create([
             'full_name' => $input['full_name'],
             'email' => $input['email'],
             'username' => $input['username'],
@@ -38,5 +43,12 @@ class CreateNewUser implements CreatesNewUsers
             'country' => $input['country'],
             'password' => Hash::make($input['password']),
         ]);
+        
+        if ($user->save()) { 
+            $user->notify(new RegisterNotification($data));
+        } 
+
+        return $user;
+        
     }
 }

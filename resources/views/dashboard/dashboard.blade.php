@@ -8,7 +8,7 @@
         <div class="row m-0 align-items-center">
             <div class="col-lg-5 col-md-12 p-0">
                 <div class="welcome-content">
-                    <h1 class="mb-2">Hi, Welcomeback cipher!</h1>
+                    <h1 class="mb-2">Hi, Welcome back {{$user->full_name}}!</h1>
                     <p class="mb-0">Just Do Somethings Better</p>
                 </div>
             </div>
