@@ -136,7 +136,7 @@
                 <div class="col-lg-6">
                     <div class="section-header left-style">
                         <span class="cate">WELCOME TO Stockmutualinvest</span>
-                        <h2 class="title">about Stockmutualinvest</h2>
+                        <h4 class="title">About Stockmutualinvest</h4>
                         <p>
                             Stockmutualinvest is a Bitcoin-based platform, offering a leveraged trading on several digital assets
                             including Bitcoin, Ethereum, Litecoin, and Ripple. The company was founded in 2018 and from the

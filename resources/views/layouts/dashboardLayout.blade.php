@@ -81,7 +81,7 @@
                 <li class="nav-item-title">Support</li>
 
                 <li class="nav-item">
-                    <a href="mailto:support@mut" class="nav-link">
+                    <a href="mailto:support@stockmutualinvest.com" class="nav-link">
                         <span class="icon"><i class='bx bx-support'></i></span>
                         <span class="menu-title">Support</span>
                     </a>
@@ -172,7 +172,7 @@
                     </li>
 
                     <li class="nav-item message-box dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
+                        <a href="mailto:support@stockmutualinvest.com" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <div class="message-btn">
                                 <i class='bx bx-envelope'></i>
@@ -330,7 +330,7 @@
         var s1 = document.createElement("script"),
             s0 = document.getElementsByTagName("script")[0];
         s1.async = true;
-        s1.src = 'https://embed.tawk.to/600c16c9c31c9117cb71adaa/1esnji151';
+        s1.src = 'https://embed.tawk.to/604747e5385de407571e1df4/1f0b71nbh';
         s1.charset = 'UTF-8';
         s1.setAttribute('crossorigin', '*');
         s0.parentNode.insertBefore(s1, s0);

@@ -46,10 +46,10 @@
                         <div class="col-6">
                             <ul class="support-area">
                                 <li>
-                                    <a href="#0"><i class="flaticon-support"></i>Support</a>
+                                    <a href="Mailto:support@Stockmutualinvest.net"><i class="flaticon-support"></i>Support</a>
                                 </li>
                                 <li>
-                                    <a href="Mailto:support@"><i
+                                    <a href="Mailto:support@Stockmutualinvest.net"><i
                                             class="flaticon-email"></i>support@Stockmutualinvest.net </a>
                                 </li>
                             </ul>
@@ -61,7 +61,7 @@
                 <div class="container">
                     <div class="header-area">
                         <div class="logo">
-                            <a href="index-2.html">
+                            <a href="{{ route('index') }}">
                                 <img src="assets/images/logo/Stockmutualinvest.png" alt="logo">
                             </a>
                         </div>
@@ -217,6 +217,7 @@
     <script src="assets/js/main.js"></script>
 
     <!--Start of Tawk.to Script-->
+    <!--Start of Tawk.to Script-->
     <script type="text/javascript">
         var Tawk_API = Tawk_API || {},
             Tawk_LoadStart = new Date();
@@ -224,13 +225,14 @@
             var s1 = document.createElement("script"),
                 s0 = document.getElementsByTagName("script")[0];
             s1.async = true;
-            s1.src = 'https://embed.tawk.to/5fcb8a65920fc91564cdc295/default';
+            s1.src = 'https://embed.tawk.to/604747e5385de407571e1df4/1f0b71nbh';
             s1.charset = 'UTF-8';
             s1.setAttribute('crossorigin', '*');
             s0.parentNode.insertBefore(s1, s0);
         })();
 
     </script>
+    <!--End of Tawk.to Script-->
     <!--End of Tawk.to Script-->
 </body>
 

@@ -50,8 +50,9 @@ class UserController extends Controller
             "coin_address" => $request->coin_address ? $request->coin_address : null,
         ])) {
             $message = "Request Successful";
+            $deposits = $user->deposits;
         }
-        return view('dashboard.fund', compact("user", "message"));
+        return view('dashboard.fund', compact("user", "message", "deposits"));
     }
 
     public function withdrawal()

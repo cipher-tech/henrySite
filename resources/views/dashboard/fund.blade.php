@@ -36,9 +36,9 @@
             @endforeach
 
             <div class="alert alert-dark rounded-pill" role="alert">
-                Contact payments@mutualstockinvest.com for other payment methods
+                Contact support@stockmutualinvest.com for other payment methods
             </div>
-            <p>Please Note that Minimum Fund Amount is $500. Contact payments@mutualstockinvest.com for a more detailed
+            <p>Please Note that Minimum Fund Amount is $500. Contact support@stockmutualinvest.com for a more detailed
                 description.<br>
             </p>
             <ul>
@@ -51,7 +51,7 @@
             <p> Your account will be credited once your payment is confirmed.
                 NOTE: If you have problems finding your Transaction Hash ID, Use the last 10 digits of your wallet address
                 as the Transaction Hash ID.
-                If you encounter any issue while funding your account, please contact payments@mutualstockinvest.com for
+                If you encounter any issue while funding your account, please contact support@stockmutualinvest.com for
                 assistance.
             </p>
             <form method="POST">
