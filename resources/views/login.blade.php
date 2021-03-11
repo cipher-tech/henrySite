@@ -103,9 +103,9 @@
          </header>
          <!--=======Banner-Section Starts Here=======-->
          <section class="bg_img hero-section-2"
-             data-background="https://Stockmutualinvest.net/assets/images/about/hero-bg2.jpg">
+             data-background="/assets/images/about/hero-bg2.jpg">
              <div class="container">
-                 <div class="hero-content text-primary">
+                 <div class="hero-content text-white">
                      <h1 class="title">Sign In</h1>
                      <ul class="breadcrumb">
                          <li>
@@ -117,10 +117,10 @@
                      </ul>
                  </div>
              </div>
-             {{-- <div class="hero-shape">
-                 <img class="wow slideInUp" src="assets/images/about/hero-shape1.png" alt="about"
+             <div class="hero-shape">
+                 <img class="wow slideInUp" src="assets/images/about/hero-shape2.png" alt="about"
                      data-wow-duration="1s">
-             </div> --}}
+             </div>
          </section>
          <!--=======Banner-Section Ends Here=======-->
 
