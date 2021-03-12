@@ -24,7 +24,7 @@
     <!-- Start Sidemenu Area -->
     <div class="sidemenu-area">
         <div class="sidemenu-header">
-            <a href="{{route('dashboard')}}" class="navbar-brand d-flex align-items-center">
+            <a href="{{ route('dashboard') }}" class="navbar-brand d-flex align-items-center">
                 <img src="https://mutualstockinvest.com//assets/images/logo/Mutualstockinvest.png" alt="logo">
             </a>
 
@@ -46,7 +46,7 @@
                 <li class="nav-item-title">Main</li>
 
                 <li class="nav-item mm-active">
-                    <a href="{{route('dashboard')}}" class="nav-link">
+                    <a href="{{ route('dashboard') }}" class="nav-link">
                         <span class="icon"><i class='bx bx-home-circle'></i></span>
                         <span class="menu-title">Dashboard</span>
                     </a>
@@ -54,14 +54,14 @@
 
                 <li class="nav-item-title">Pages</li>
                 <li class="nav-item ">
-                    <a href="{{route('adminFund')}}" class="nav-link">
+                    <a href="{{ route('adminFund') }}" class="nav-link">
                         <span class="icon"><i class='bx bxs-duplicate'></i></span>
                         <span class="menu-title">Deposits</span>
                     </a>
                 </li>
 
                 <li class="nav-item ">
-                    <a href="{{route('adminWithdrawal')}}" class="nav-link">
+                    <a href="{{ route('adminWithdrawal') }}" class="nav-link">
                         <span class="icon"><i class='bx bx-wallet'></i></span>
                         <span class="menu-title">Withdrawals</span>
                     </a>
@@ -192,7 +192,11 @@
                         <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <div class="menu-profile">
-                                <span class="name">Hi! chu</span>
+                                <span class="name">Hi!
+                                    @if ($user)
+                                        {{ $user->username }}
+                                    @endif
+                                </span>
                                 <img src="https://mutualstockinvest.com//assets/images/table/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
                                     class="rounded-circle" alt="image">
                             </div>
@@ -205,8 +209,16 @@
                                         class="rounded-circle" alt="image">
                                 </div>
                                 <div class="info text-center">
-                                    <span class="name">chu</span>
-                                    <p class="mb-3 email">cipher@gmail.com</p>
+                                    <span class="name">
+                                        @if ($user)
+                                            {{ $user->username }}
+                                        @endif
+                                    </span>
+                                    <p class="mb-3 email">
+                                        @if ($user)
+                                            {{ $user->email }}
+                                        @endif
+                                    </p>
                                 </div>
                             </div>
 

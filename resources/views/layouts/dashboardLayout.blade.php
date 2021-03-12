@@ -212,8 +212,16 @@
                                         class="rounded-circle" alt="image"> --}}
                                 </div>
                                 <div class="info text-center">
-                                    <span class="name">chu</span>
-                                    <p class="mb-3 email">cipher@gmail.com</p>
+                                    <span class="name">
+                                        @if ($user)
+                                        {{ $user->username }}
+                                    @endif
+                                    </span>
+                                    <p class="mb-3 email">
+                                        @if ($user)
+                                        {{ $user->email }}
+                                    @endif
+                                    </p>
                                 </div>
                             </div>
 

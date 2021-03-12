@@ -155,15 +155,15 @@
                                 <input type="submit" name="signinForm" value="login">
                             </div>
                         </form> --}}
-                         <x-guest-layout>
-                             <x-jet-authentication-card>
+                         {{-- <x-guest-layout> --}}
+                             {{-- <x-jet-authentication-card> --}}
                                  <x-slot name="logo">
                                      {{-- <x-jet-authentication-card-logo /> --}}
-                                     <img src="assets/images/logo/Stockmutualinvest.png" alt="logo">
+                                     {{-- <img src="assets/images/logo/Stockmutualinvest.png" alt="logo"> --}}
 
                                  </x-slot>
 
-                                 <x-jet-validation-errors class="mb-4" />
+                                 <x-jet-validation-errors class="mb-4 text-danger" />
 
                                  @if (session('status'))
                                      <div class="mb-4 font-medium text-sm text-green-600">
@@ -171,12 +171,12 @@
                                      </div>
                                  @endif
 
-                                 <form method="POST" action="{{ route('login') }}">
+                                 <form method="POST" class="contact-form" id="contact_form_submit" action="{{ route('login') }}">
                                      @csrf
 
-                                     <div>
+                                     <div class="form-group">
                                          <x-jet-label for="email" value="{{ __('Email') }}" />
-                                         <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email"
+                                         <input placeholder="Email" id="email" class="block mt-1 w-full" type="email" name="email"
                                              :value="old('email')" required autofocus />
                                      </div>
 
@@ -186,12 +186,12 @@
                                              name="password" required autocomplete="current-password" />
                                      </div>
 
-                                     <div class="block mt-4">
+                                     {{-- <div class="block mt-4">
                                          <label for="remember_me" class="flex items-center">
                                              <x-jet-checkbox id="remember_me" name="remember" />
                                              <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
                                          </label>
-                                     </div>
+                                     </div> --}}
 
                                      <div class="flex items-center justify-end mt-4">
                                          @if (Route::has('password.request'))
@@ -200,14 +200,17 @@
                                                  {{ __('Forgot your password?') }}
                                              </a>
                                          @endif
+                                         <div class="form-group">
+                                            <input type="submit" name="signinForm" value="login">
+                                        </div>
 
-                                         <x-jet-button class="ml-4">
+                                         {{-- <x-jet-button class="ml-4">
                                              {{ __('Log in') }}
-                                         </x-jet-button>
+                                         </x-jet-button> --}}
                                      </div>
                                  </form>
-                             </x-jet-authentication-card>
-                         </x-guest-layout>
+                             {{-- </x-jet-authentication-card> --}}
+                         {{-- </x-guest-layout> --}}
                      </div>
                  </div>
              </div>
@@ -328,19 +331,19 @@
 
      <!--Start of Tawk.to Script-->
      <script type="text/javascript">
-         var Tawk_API = Tawk_API || {},
-             Tawk_LoadStart = new Date();
-         (function() {
-             var s1 = document.createElement("script"),
-                 s0 = document.getElementsByTagName("script")[0];
-             s1.async = true;
-             s1.src = 'https://embed.tawk.to/604747e5385de407571e1df4/1f0b71nbh';
-             s1.charset = 'UTF-8';
-             s1.setAttribute('crossorigin', '*');
-             s0.parentNode.insertBefore(s1, s0);
-         })();
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/604747e5385de407571e1df4/1f0b71nbh';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
 
-     </script>
+    </script>
      <!--End of Tawk.to Script-->
  </body>
 
