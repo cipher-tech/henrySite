@@ -65,6 +65,6 @@ class AdminController extends Controller
     {
         $Withdrawals = Withdrawal::paginate(10);
         $user = Auth::user();
-        return view('admin.Withdraw', compact('Withdrawals', "user"));
+        return view('admin.withdraw', compact('Withdrawals', "user"));
     }
 }

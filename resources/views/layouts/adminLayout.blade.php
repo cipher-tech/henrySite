@@ -16,7 +16,7 @@
 
     <title>Stockmutualinvest</title>
 
-    <link rel="icon" type="image/png" href="/dassets/img/favicon.png">
+    <link rel="icon" type="image/png" href="/assets/images/logo/Stockmutualinvest.png">
 </head>
 
 <body>

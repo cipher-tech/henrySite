@@ -20,14 +20,16 @@
 <!-- Start -->
 <div class="card mb-30">
     <div class="card-header d-flex justify-content-between align-items-center">
-        <h3>Deposits
+        <h3>Withdrawals
             <pre>via Bitcoin</pre>
         </h3>
 
     </div>
 
     <div class="card-body">
-        <h1>All Deposits</h1>
+        <h1> 
+            All Withdrawals     
+        </h1>
         <table class="table table-borderless">
             <thead>
                 <tr>
