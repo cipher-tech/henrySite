@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=1024">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Stockmutualinvest | Home</title>
+    <title>Stockmutualinvest</title>
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">

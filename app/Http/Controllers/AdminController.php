@@ -13,8 +13,8 @@ class AdminController extends Controller
 {
     public function index()
     {
+        $user = auth()->user();
         $users = User::paginate(10);
-        $user = Auth::user();
 
         return view('admin.index', compact('users', "user"));
     }

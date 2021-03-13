@@ -14,7 +14,7 @@
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="/dassets/css/responsive.css">
 
-    <title>Mutualstockinvest</title>
+    <title>Stockmutualinvest</title>
 
     <link rel="icon" type="image/png" href="/dassets/img/favicon.png">
 </head>
@@ -25,7 +25,7 @@
     <div class="sidemenu-area">
         <div class="sidemenu-header">
             <a href="{{ route('dashboard') }}" class="navbar-brand d-flex align-items-center">
-                <img src="https://mutualstockinvest.com//assets/images/logo/Mutualstockinvest.png" alt="logo">
+                <img src="/assets/images/logo/Stockmutualinvest.png" alt="logo">
             </a>
 
             <div class="burger-menu d-none d-lg-block">
@@ -114,7 +114,7 @@
 
 
                     <li class="nav-item">
-                        <a href="https://mutualstockinvest.com//profile" class="nav-link" data-toggle="tooltip"
+                        <a href="{{ route('profile') }}" class="nav-link" data-toggle="tooltip"
                             data-placement="bottom" title="Edit profile">
                             <i class='bx bx-edit'></i>
                         </a>
@@ -194,7 +194,9 @@
                             <div class="menu-profile">
                                 <span class="name">Hi!
                                     @if ($user)
-                                        {{ $user->username }}
+                                    {{-- {{$user}} --}}
+                                    @yield('adminName')
+                                        {{-- {{ $user->username }} --}}
                                     @endif
                                 </span>
                                 <span class="icon rounded-circle h2"><i class='bx bx-user'></i></span>
@@ -206,18 +208,21 @@
                         <div class="dropdown-menu">
                             <div class="dropdown-header d-flex flex-column align-items-center">
                                 <div class="figure mb-3">
-                                    <img src="https://mutualstockinvest.com//assets/images/table/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
-                                        class="rounded-circle" alt="image">
+                                    <i class='bx bx-user rounded-circle'></i>
+                                    {{-- <img src="https://mutualstockinvest.com//assets/images/table/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
+                                        class="rounded-circle" alt="image"> --}}
                                 </div>
                                 <div class="info text-center">
                                     <span class="name">
                                         @if ($user)
-                                            {{ $user->username }}
+                                        @yield('adminName2')
+                                            {{-- {{ $user->username }} --}}
                                         @endif
                                     </span>
                                     <p class="mb-3 email">
                                         @if ($user)
-                                            {{ $user->email }}
+                                        @yield('adminEmail')
+                                            {{-- {{ $user->email }} --}}
                                         @endif
                                     </p>
                                 </div>
@@ -226,7 +231,7 @@
                             <div class="dropdown-body">
                                 <ul class="profile-nav p-0 pt-3">
                                     <li class="nav-item">
-                                        <a href="https://mutualstockinvest.com//profile" class="nav-link">
+                                        <a href="{{ route('profile') }}" class="nav-link">
                                             <i class='bx bx-user'></i> <span>Profile</span>
                                         </a>
                                     </li>

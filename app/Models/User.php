@@ -31,6 +31,7 @@ class User extends Authenticatable
         'phone_no',
         'country',
         'password',
+        "stock_starts",
     ];
 
     /**

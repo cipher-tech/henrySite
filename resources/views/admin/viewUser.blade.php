@@ -133,7 +133,7 @@
 
                                 <div class="col-lg">
                                     <label>Stats</label>
-                                    <input class="form-control" name="stocks_starts" type="text"
+                                    <input class="form-control" name="stock_starts" type="text"
                                         value="{{ $user['stock_starts'] }}">
                                 </div><!-- col -->
 

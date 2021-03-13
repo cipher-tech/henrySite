@@ -76,7 +76,7 @@ Route::group(['prefix' => 'dashboard', "middleware" => "auth:sanctum"], function
     })->name("userProfile");
 });
 
-Route::group(['prefix' => 'admin', "middleware" => "isAdmin"], function () {
+Route::group(['prefix' => 'admin', "middleware" => ['auth:sanctum', 'verified', "isAdmin"]], function () {
     Route::get('/', [AdminController::class, "index"])->name("adminDashboard");
  
     Route::get('/deposits', [AdminController::class, "getDeposits"])->name("adminFund");

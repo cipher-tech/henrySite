@@ -14,7 +14,7 @@
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="/dassets/css/responsive.css">
 
-    <title>Mutualstockinvest</title>
+    <title>Stockmutualinvest</title>
 
     <link rel="icon" type="image/png" href="/dassets/img/favicon.png">
 </head>
