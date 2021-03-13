@@ -14,8 +14,9 @@ class AdminController extends Controller
     public function index()
     {
         $users = User::paginate(10);
+        $user = Auth::user();
 
-        return view('admin.index', compact('users'));
+        return view('admin.index', compact('users', "user"));
     }
     public function ViewUser($id)
     {
@@ -56,14 +57,14 @@ class AdminController extends Controller
     public function getDeposits()
     {
         $deposits = Deposit::paginate(10);
-
-        return view('admin.fund', compact('deposits'));
+        $user = Auth::user();
+        return view('admin.fund', compact('deposits', "user"));
     }
 
     public function getWithdrawals()
     {
         $Withdrawals = Withdrawal::paginate(10);
-
-        return view('admin.Withdraw', compact('Withdrawals'));
+        $user = Auth::user();
+        return view('admin.Withdraw', compact('Withdrawals', "user"));
     }
 }

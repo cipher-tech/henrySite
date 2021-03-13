@@ -8,7 +8,7 @@
         <div class="row m-0 align-items-center">
             <div class="col-lg-5 col-md-12 p-0">
                 <div class="welcome-content">
-                    <h1 class="mb-2">Hi, Welcome back {{$user->full_name}}!</h1>
+                    <h1 class="mb-2">Hi, Welcome {{$user->full_name}}!</h1>
                     <p class="mb-0">Just Do Somethings Better</p>
                 </div>
             </div>
@@ -30,13 +30,15 @@
                     <div class="icon">
                         <i class='bx bxs-user-check'></i>
                     </div>
-                    <span class="sub-title">Balance</span>
+                    <span class="sub-title">Profit</span>
                     <h3 class="row">
                         <span class="col-8">${{ $user->wallet_balance }}</span>
                         <small class="col-4 text-small" style="font-size: xx-small;">
-                            AMP <br>
+                            {{-- {{ $user->stock_starts }} --}}
+                            <?=str_replace('|', '<br /> ', $user->stock_starts)?>
+                            {{-- AMP <br>
                             230.10 <br>
-                            +10.5 <br>
+                            +10.5 <br> --}}
                         </small>
                     </h3>
                 </div>
@@ -48,7 +50,7 @@
                         <i class='bx bxs-badge-dollar'></i>
                     </div>
                     <span class="sub-title">Invested</span>
-                    <h3>$0</h3>
+                    <h3>${{ $user->invested }}</h3>
                 </div>
             </div>
 

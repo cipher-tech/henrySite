@@ -46,7 +46,7 @@
                 <li class="nav-item-title">Main</li>
 
                 <li class="nav-item mm-active">
-                    <a href="{{ route('dashboard') }}" class="nav-link">
+                    <a href="{{ route('adminDashboard') }}" class="nav-link">
                         <span class="icon"><i class='bx bx-home-circle'></i></span>
                         <span class="menu-title">Dashboard</span>
                     </a>
@@ -81,7 +81,7 @@
                 <li class="nav-item-title">Support</li>
 
                 <li class="nav-item">
-                    <a href="mailto:support@mutualstockinvest.com" class="nav-link">
+                    <a href="mailto:support@stockmutualinvest.com/" class="nav-link">
                         <span class="icon"><i class='bx bx-support'></i></span>
                         <span class="menu-title">Support</span>
                     </a>
@@ -197,8 +197,9 @@
                                         {{ $user->username }}
                                     @endif
                                 </span>
-                                <img src="https://mutualstockinvest.com//assets/images/table/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
-                                    class="rounded-circle" alt="image">
+                                <span class="icon rounded-circle h2"><i class='bx bx-user'></i></span>
+                                {{-- <img src="https://mutualstockinvest.com//assets/images/table/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png"
+                                    class="rounded-circle" alt="image"> --}}
                             </div>
                         </a>
 
@@ -235,9 +236,16 @@
                             <div class="dropdown-footer">
                                 <ul class="profile-nav">
                                     <li class="nav-item">
-                                        <a href="https://mutualstockinvest.com//logout" class="nav-link">
-                                            <i class='bx bx-log-out'></i> <span>Logout</span>
-                                        </a>
+                                        <form action="{{route("logout")}}" method="POST">
+                                            @csrf
+                                            <button class="btn btn-outline-danger nav-link">
+                                                <i class='bx bx-log-out'></i> <span>Logout</span>
+                                            </button>
+                                            {{-- <button type="submit" class="nav-link">
+                                                <i class='bx bx-log-out'></i> <span>Logout</span>
+                                            </button> --}}
+                                        </form>
+                                       
                                     </li>
                                 </ul>
                             </div>

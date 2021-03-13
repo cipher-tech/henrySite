@@ -240,7 +240,7 @@
                                     <li class="nav-item">
                                         <form action="{{route("logout")}}" method="POST">
                                             @csrf
-                                            <button type="submit" class="nav-link">
+                                            <button type="submit" class="btn-outline-danger nav-link">
                                                 <i class='bx bx-log-out'></i> <span>Logout</span>
                                             </button>
                                         </form>
