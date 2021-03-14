@@ -31,7 +31,7 @@
                                     <br>
                                 <h4 class="title">Phone Number:</h4>
                                 <p>
-                                    +1 323-859-7658 and +1 (213) 454-7750
+                                    +1 323-859-7658 and +1 (323) 486-5330
                                 </p>
                             </div>
                             <div class="contact-content">
