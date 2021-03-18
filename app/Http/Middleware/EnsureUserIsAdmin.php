@@ -16,7 +16,7 @@ class EnsureUserIsAdmin
      */
     public function handle(Request $request, Closure $next)
     {
-        if(auth()->user()->role !== "admin"){
+        if(auth()->user() && auth()->user()->role !== "admin"){
             return redirect('login');
         }
         return $next($request);
