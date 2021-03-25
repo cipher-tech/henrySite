@@ -169,7 +169,7 @@
                 <div class="footer-bottom">
                     <div class="footer-bottom-area">
                         <div class="left">
-                            <p>&copy; 2020 <a href="#0"></a> | All right reserved</p>
+                            <p>&copy; 2021 <a href="#0"></a> | All right reserved</p>
                         </div>
                         <ul class="social-icons">
                             <li>

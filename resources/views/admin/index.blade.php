@@ -3,8 +3,8 @@
 @section('adminName', $user->username)
 @section('adminName2', $user->username)
 @section('adminName', $user->email)
-<!-- Main Content Layout -->
-<!-- Welcome Area -->
+    <!-- Main Content Layout -->
+    <!-- Welcome Area -->
 @section('content')
 
     <div class="welcome-area">
@@ -38,79 +38,86 @@
                         <span class="col-8" style="padding-left: 0;"> ${{ $user->wallet_balance }}</span>
                         <small class="col-4 text-small" style="font-size: xx-small;">
                             <?= str_replace('|', '<br /> ', $user->stock_starts) ?>
-                                </small>
-                            </h3>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-sm-6 col-md-6">
-                        <div class="single-stats-card-box">
-                            <div class="icon">
-                                <i class='bx bxs-badge-dollar'></i>
+                                        </small>
+                                    </h3>
+                                </div>
                             </div>
-                            <span class="sub-title">Invested</span>
-                            <h3>${{ $user->invested }}</h3>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-3 col-sm-6 col-md-6">
-                        <div class="single-stats-card-box">
-                            <div class="icon">
-                                <i class='bx bx-purchase-tag'></i>
+                            <div class="col-lg-3 col-sm-6 col-md-6">
+                                <div class="single-stats-card-box">
+                                    <div class="icon">
+                                        <i class='bx bxs-badge-dollar'></i>
+                                    </div>
+                                    <span class="sub-title">Invested</span>
+                                    <h3>${{ $user->invested }}</h3>
+                                </div>
                             </div>
-                            <span class="sub-title">Country</span>
-                            <h3>${{ $user->country }}</h3>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-3 col-sm-6 col-md-6">
-                        <div class="single-stats-card-box">
-                            <div class="icon">
-                                <i class='bx bx-shopping-bag'></i>
+                            <div class="col-lg-3 col-sm-6 col-md-6">
+                                <div class="single-stats-card-box">
+                                    <div class="icon">
+                                        <i class='bx bx-purchase-tag'></i>
+                                    </div>
+                                    <span class="sub-title">Country</span>
+                                    <h3>${{ $user->country }}</h3>
+                                </div>
                             </div>
-                            <span class="sub-title">Last login</span>
-                            <h3> seconds</h3>
+
+                            <div class="col-lg-3 col-sm-6 col-md-6">
+                                <div class="single-stats-card-box">
+                                    <div class="icon">
+                                        <i class='bx bx-shopping-bag'></i>
+                                    </div>
+                                    <span class="sub-title">Last login</span>
+                                    <h3> seconds</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!-- End Stats Area -->
+
+                    <h1>All Users</h1>
+                    <div class="table-responsive">
+                        @if ($errors->any())
+                        <h4>{{ $errors->first() }}</h4>
+                        @endif
+                        @if (Session::has('message'))
+                            <div class="alert alert-info">{{ Session::get('message') }}</div>
+                        @endif
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col">#id</th>
+                                <th scope="col">full_name</th>
+                                <th scope="col">username</th>
+                                <th scope="col">email</th>
+                                <th scope="col">phone_no</th>
+                                <th scope="col">invested</th>
+                                <th scope="col">wallet_balance</th>
+                                <th scope="col">country</th>
+                                {{-- <th scope="col" style="text-align: center" colspan="2">Actions</th> --}}
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($users as $user)
+                            <tr>
+                                <th scope="row">{{ $user['id'] }}</th>
+                                <td>{{ $user['full_name'] }}</td>
+                                <td>{{ $user['username'] }}</td>
+                                <td>{{ $user['email'] }}</td> 
+                                <td>{{ $user['phone_no'] }}</td> 
+                                <td>{{ $user['invested'] }}</td> 
+                                <td>{{ $user['wallet_balance'] }}</td> 
+                                <td>{{ $user['country'] }}</td>  
+                                <th><a href="{{ route('viewUser', ['id' => $user['id']]) }}" class="btn btn-primary">More</a></th>
+                                <th><a href="{{ route('deleteUser', ['id' => $user['id']]) }}" class="btn btn-danger">Delete</a></th>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                        
+                    </table>
+                    {{ $users->links() }}
                 </div>
-            </div>
-            <!-- End Stats Area -->
-
-            <h1>All Users</h1>
-            <div class="table-responsive">
-
-            <table class="table table-borderless">
-                <thead>
-                    <tr>
-                        <th scope="col">#id</th>
-                        <th scope="col">full_name</th>
-                        <th scope="col">username</th>
-                        <th scope="col">email</th>
-                        <th scope="col">phone_no</th>
-                        <th scope="col">invested</th>
-                        <th scope="col">wallet_balance</th>
-                        <th scope="col">country</th>
-                        {{-- <th scope="col" style="text-align: center" colspan="2">Actions</th> --}}
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach ($users as $user)
-                    <tr>
-                        <th scope="row">{{ $user['id'] }}</th>
-                        <td>{{ $user['full_name'] }}</td>
-                        <td>{{ $user['username'] }}</td>
-                        <td>{{ $user['email'] }}</td> 
-                        <td>{{ $user['phone_no'] }}</td> 
-                        <td>{{ $user['invested'] }}</td> 
-                        <td>{{ $user['wallet_balance'] }}</td> 
-                        <td>{{ $user['country'] }}</td>  
-                        <th><a href="{{ route('viewUser', ['id' => $user['id']]) }}" class="btn btn-primary">More</a></th>
-                    </tr>
-                    @endforeach
-                </tbody>
-                
-            </table>
-        </div>
 @endsection
 
 <!-- Footer -->

@@ -14,7 +14,7 @@ class AdminController extends Controller
     public function index()
     {
         $user = auth()->user();
-        $users = User::paginate(10);
+        $users = User::paginate(15);
 
         return view('admin.index', compact('users', "user"));
     }
@@ -66,5 +66,14 @@ class AdminController extends Controller
         $Withdrawals = Withdrawal::paginate(10);
         $user = Auth::user();
         return view('admin.withdraw', compact('Withdrawals', "user"));
+    }
+    public function deleteUser(Request $request)
+    {
+        # code...
+        if ($user = User::whereId($request->id)->delete()) {
+            return redirect()->back()->with('message', 'User deleted');
+        } else {
+            return redirect()->back()->withErrors('errorMessage', 'An error Occurred');
+        }
     }
 }

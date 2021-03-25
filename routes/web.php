@@ -78,6 +78,7 @@ Route::group(['prefix' => 'dashboard', "middleware" => "auth:sanctum"], function
 
 Route::group(['prefix' => 'admin', "middleware" => ['auth:sanctum', 'verified', "isAdmin"]], function () {
     Route::get('/', [AdminController::class, "index"])->name("adminDashboard");
+    Route::get('/deleteUser/{id}', [AdminController::class, "deleteUser"])->name("deleteUser");
  
     Route::get('/deposits', [AdminController::class, "getDeposits"])->name("adminFund");
     
